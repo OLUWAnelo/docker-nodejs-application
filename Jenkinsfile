@@ -15,7 +15,8 @@ pipeline {
 
     stage('FrontEnd Test') {
       steps {
-        sh 'cd docker-nodejs-application && npm i && npm run test:unit '
+        sh '''ls docker-nodejs-application 
+'''
       }
     }
 

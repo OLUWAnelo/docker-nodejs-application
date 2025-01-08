@@ -13,9 +13,9 @@ pipeline {
       }
     }
 
-    stage('Frontend test') {
+    stage('Test') {
       steps {
-        sh 'cd ${env.WORKSPACE}/docker-nodejs-application'
+        sh 'npm test'
       }
     }
 
